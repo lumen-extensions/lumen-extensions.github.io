@@ -12,7 +12,7 @@ export default function PrivacyPage() {
     <div className="min-h-screen extension-bg">
       {/* Header */}
       <header className="no-print py-6 border-b border-gray-200 bg-white">
-        <div className="policy-container">
+        <div className="container">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
