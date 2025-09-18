@@ -44,57 +44,48 @@ export default function HomePage() {
             <h1 className="text-4xl md:text-5xl font-bold extension-text mb-4">Lumen Extensions</h1>
             <p className="text-xl text-gray-600 mb-8">Professional browser extension development</p>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              We specialize in creating powerful, secure, and user-friendly browser extensions for Chrome, Firefox, Safari, and Edge. 
-              Our extensions enhance productivity, streamline workflows, and provide seamless user experiences across all major browsers.
+              We create smart and user-friendly Chrome extensions that save you time and make your browser work faster and easier.
             </p>
           </div>
 
-          {/* Browser Support Section */}
-          <div className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl font-bold extension-text text-center mb-8">Supported Browsers</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">
-                <Globe className="w-12 h-12 text-blue-500 mb-2" />
-                <span className="font-medium">Chrome</span>
-              </div>
-              <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">
-                <Monitor className="w-12 h-12 text-orange-500 mb-2" />
-                <span className="font-medium">Firefox</span>
-              </div>
-              <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">
-                <Smartphone className="w-12 h-12 text-blue-600 mb-2" />
-                <span className="font-medium">Safari</span>
-              </div>
-              <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">
-                <Laptop className="w-12 h-12 text-blue-700 mb-2" />
-                <span className="font-medium">Edge</span>
+          {/* Chrome Focus Section */}
+          <div className="max-w-2xl mx-auto mb-16">
+            <h2 className="text-2xl font-bold extension-text text-center mb-8">Chrome-First Development</h2>
+            <div className="flex justify-center">
+              <div className="flex flex-col items-center p-8 bg-white rounded-lg shadow-sm border-2 border-blue-100">
+                <Globe className="w-16 h-16 text-blue-500 mb-4" />
+                <span className="font-bold text-xl text-blue-600 mb-2">Google Chrome</span>
+                <p className="text-gray-600 text-center">
+                  We specialize in Chrome extensions, leveraging the latest Chrome APIs and Manifest V3 
+                  to deliver the best possible user experience.
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Services Section */}
+          {/* Key Features Section */}
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold extension-text text-center mb-8">Our Services</h2>
+            <h2 className="text-2xl font-bold extension-text text-center mb-8">Why Choose Our Extensions</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="p-6 text-center">
-                <Code className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold extension-text mb-3">Custom Development</h3>
+                <Zap className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold extension-text mb-3">Lightning Fast</h3>
                 <p className="text-gray-600">
-                  Tailored browser extensions built from scratch to meet your specific requirements and business needs.
+                  Optimized for speed and performance. Our extensions load instantly and use minimal system resources.
                 </p>
               </Card>
               <Card className="p-6 text-center">
                 <Shield className="w-12 h-12 text-green-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold extension-text mb-3">Security & Compliance</h3>
+                <h3 className="text-xl font-semibold extension-text mb-3">Privacy First</h3>
                 <p className="text-gray-600">
-                  Secure extensions that comply with browser store policies and industry security standards.
+                  All data stays on your device. No cloud storage, no data collection, no tracking.
                 </p>
               </Card>
               <Card className="p-6 text-center">
-                <Zap className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold extension-text mb-3">Performance Optimization</h3>
+                <Users className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold extension-text mb-3">User-Friendly</h3>
                 <p className="text-gray-600">
-                  Fast, lightweight extensions optimized for speed and minimal resource consumption.
+                  Intuitive design that anyone can use. No learning curve, just install and start working.
                 </p>
               </Card>
             </div>
@@ -108,17 +99,17 @@ export default function HomePage() {
               <div className="flex flex-col md:flex-row items-center gap-8">
                 {/* Extension Icon */}
                 <div className="flex-shrink-0">
-                  <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-lg flex items-center justify-center">
-                    <Users className="w-12 h-12 text-white" />
+                  <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-blue-600 rounded-2xl shadow-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-2xl">$</span>
                   </div>
                 </div>
 
                 {/* Extension Info */}
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl font-bold extension-blue mb-3">Productivity Pro</h3>
+                  <h3 className="text-2xl font-bold extension-blue mb-3">Invoice Pro - Generator & Maker</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    A comprehensive productivity extension that helps you manage tasks, track time, and stay focused. 
-                    Features include tab management, distraction blocking, and seamless integration with popular productivity tools.
+                    Quickly create, edit, and save invoices right in your browser. Perfect for freelancers, entrepreneurs, and small businesses. 
+                    No sign-up, no clutter — just the features you need.
                   </p>
 
                   {/* Download Buttons */}
@@ -130,9 +121,9 @@ export default function HomePage() {
                       </a>
                     </Button>
                     <Button asChild variant="outline">
-                      <a href="#" className="flex items-center gap-3">
-                        <Monitor className="w-5 h-5" />
-                        Firefox Add-ons
+                      <a href="/instructions" className="flex items-center gap-3">
+                        <Code className="w-5 h-5" />
+                        Installation Guide
                       </a>
                     </Button>
                   </div>
@@ -145,13 +136,12 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto mt-16 text-center">
             <h2 className="text-2xl font-bold extension-text mb-6">About Lumen Extensions</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Lumen Extensions is a specialized development studio focused on creating high-quality browser extensions 
-              that solve real-world problems and enhance user productivity.
+              Lumen Extensions specializes in creating smart Chrome extensions that solve real business problems. 
+              We focus on productivity tools that help freelancers, entrepreneurs, and small businesses work more efficiently.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Our team combines deep technical expertise with user-centered design to deliver extensions that are not only 
-              powerful and reliable, but also intuitive and enjoyable to use. We believe in the power of browser extensions 
-              to transform how people work and interact with the web.
+              Our extensions are designed with privacy in mind — all your data stays on your device. No accounts, 
+              no cloud storage, no data collection. Just powerful tools that work exactly when and how you need them.
             </p>
           </div>
         </div>
