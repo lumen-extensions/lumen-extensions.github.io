@@ -1,11 +1,9 @@
+"use client"
+
 import Link from "next/link"
 import { Card } from "@/components/ui/card"
-import { Globe, Monitor, Smartphone, Laptop, Download, Settings, Shield, HelpCircle } from "lucide-react"
-
-export const metadata = {
-  title: "Installation Instructions - Lumen Extensions",
-  description: "Step-by-step instructions for installing Lumen Extensions browser extensions.",
-}
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Clock, FileText, CheckCircle } from "lucide-react"
 
 export default function InstructionsPage() {
   return (
@@ -43,230 +41,289 @@ export default function InstructionsPage() {
       {/* Main Content */}
       <main className="py-12">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h1 className="text-3xl font-bold extension-text mb-4">Installation Instructions</h1>
               <p className="text-lg text-gray-600">
-                Follow these step-by-step instructions to install our browser extensions
+                Get started with Invoice Pro - Generator & Maker in just a few steps
               </p>
             </div>
 
-            {/* Chrome Instructions */}
-            <Card className="p-8 mb-8">
-              <div className="flex items-center mb-6">
-                <Globe className="w-8 h-8 text-blue-500 mr-3" />
-                <h2 className="text-2xl font-bold extension-text">Google Chrome</h2>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    1
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Download the Extension</h3>
-                    <p className="text-gray-600">Click the "Add to Chrome" button on the Chrome Web Store or download the .crx file from our website.</p>
-                  </div>
-                </div>
+            <Tabs defaultValue="quick-start" className="w-full">
+              <TabsList className="grid w-full grid-cols-2 mb-8">
+                <TabsTrigger value="quick-start" className="flex items-center gap-2">
+                  <Clock className="w-4 h-4" />
+                  Quick Start
+                </TabsTrigger>
+                <TabsTrigger value="full-guide" className="flex items-center gap-2">
+                  <FileText className="w-4 h-4" />
+                  Full Guide
+                </TabsTrigger>
+              </TabsList>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    2
+              {/* Quick Start Tab */}
+              <TabsContent value="quick-start" className="space-y-8">
+                <Card className="p-8">
+                  <div className="text-center mb-8">
+                    <h2 className="text-2xl font-bold extension-text mb-4">Quick Start Guide</h2>
+                    <p className="text-gray-600">
+                      Get up and running with Invoice Pro in under 5 minutes
+                    </p>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Enable Developer Mode</h3>
-                    <p className="text-gray-600">Open Chrome and go to <code className="bg-gray-100 px-2 py-1 rounded">chrome://extensions/</code>. Turn on "Developer mode" in the top right corner.</p>
-                  </div>
-                </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    3
+                  {/* Placeholder for Quick Start content - will be updated with screenshots */}
+                  <div className="space-y-6">
+                    <div className="text-center py-12 bg-gray-50 rounded-lg">
+                      <Clock className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                      <h3 className="text-lg font-semibold text-gray-600 mb-2">Quick Start Guide Coming Soon</h3>
+                      <p className="text-gray-500">
+                        Visual step-by-step instructions with screenshots will be added here.
+                        <br />
+                        For now, please use the Full Guide below.
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Install the Extension</h3>
-                    <p className="text-gray-600">Click "Load unpacked" and select the extension folder, or drag and drop the .crx file into the extensions page.</p>
-                  </div>
-                </div>
+                </Card>
+              </TabsContent>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    4
+              {/* Full Guide Tab */}
+              <TabsContent value="full-guide" className="space-y-8">
+                <Card className="p-8">
+                  <div className="text-center mb-8">
+                    <h2 className="text-2xl font-bold extension-text mb-4">Complete User Manual</h2>
+                    <p className="text-gray-600">
+                      Comprehensive guide to all features and functionality
+                    </p>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Pin the Extension</h3>
-                    <p className="text-gray-600">Click the puzzle piece icon in the toolbar and pin our extension for easy access.</p>
-                  </div>
-                </div>
-              </div>
-            </Card>
 
-            {/* Firefox Instructions */}
-            <Card className="p-8 mb-8">
-              <div className="flex items-center mb-6">
-                <Monitor className="w-8 h-8 text-orange-500 mr-3" />
-                <h2 className="text-2xl font-bold extension-text">Mozilla Firefox</h2>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    1
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Download from Add-ons Store</h3>
-                    <p className="text-gray-600">Visit the Firefox Add-ons store and search for our extension, then click "Add to Firefox".</p>
-                  </div>
-                </div>
+                  <div className="prose max-w-none">
+                    <h3 className="text-xl font-bold extension-text mb-4">1) Installation</h3>
+                    <p className="text-gray-600 mb-4">
+                      Install from Chrome Web Store. After installation, click the extension icon to open the interface. 
+                      The page will open automatically on first install.
+                    </p>
+                    <p className="text-gray-600 mb-6">
+                      Screenshot: Extension card in CWS + icon in toolbar.
+                    </p>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    2
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Allow Installation</h3>
-                    <p className="text-gray-600">Click "Add" in the popup dialog to confirm the installation.</p>
-                  </div>
-                </div>
+                    <h3 className="text-xl font-bold extension-text mb-4">2) First Launch and Interface</h3>
+                    <p className="text-gray-600 mb-2">
+                      Top menu: New invoice, Invoices, Clients, Settings.
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                      Document modes: Edit / Preview (toggle in header).
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      Actions: Save Draft, Print invoice, Save PDF, Mark as sent (after sending, additional options become available: Duplicate, Mark as Paid).
+                    </p>
+                    <p className="text-gray-600 mb-6">
+                      Screenshot: "New Invoice" (form + right sidebar).
+                    </p>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    3
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Access Extension</h3>
-                    <p className="text-gray-600">The extension will appear in your Firefox toolbar. Click the extension icon to access its features.</p>
-                  </div>
-                </div>
-              </div>
-            </Card>
+                    <h3 className="text-xl font-bold extension-text mb-4">3) Creating an Invoice (New invoice)</h3>
+                    
+                    <h4 className="text-lg font-semibold extension-text mb-3">Top Panel:</h4>
+                    <p className="text-gray-600 mb-2">
+                      Number, Date, Terms are set automatically; number can be adjusted manually.
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                      Auto-numbering is configured in Settings (prefix/counter — enable and set rules).
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      When selecting Terms → Custom Date, a Due Date field appears.
+                    </p>
 
-            {/* Safari Instructions */}
-            <Card className="p-8 mb-8">
-              <div className="flex items-center mb-6">
-                <Smartphone className="w-8 h-8 text-blue-600 mr-3" />
-                <h2 className="text-2xl font-bold extension-text">Safari</h2>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    1
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Enable Developer Menu</h3>
-                    <p className="text-gray-600">Open Safari Preferences (Safari → Preferences), go to Advanced tab, and check "Show Develop menu in menu bar".</p>
-                  </div>
-                </div>
+                    <h4 className="text-lg font-semibold extension-text mb-3">From Section:</h4>
+                    <p className="text-gray-600 mb-2">
+                      Company name, email (required), address, phone, Tax/Business ID, website.
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      These fields can be filled once in Settings — they will be automatically inserted in each new invoice.
+                    </p>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    2
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Download Extension</h3>
-                    <p className="text-gray-600">Download the .safariextz file from our website or the Mac App Store.</p>
-                  </div>
-                </div>
+                    <h4 className="text-lg font-semibold extension-text mb-3">Bill To Section:</h4>
+                    <p className="text-gray-600 mb-2">
+                      Company/Client name, email (required), address and contacts.
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      We recommend first adding a client in the Clients tab — then use autocomplete.
+                    </p>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    3
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Install Extension</h3>
-                    <p className="text-gray-600">Double-click the .safariextz file to install it, or use Develop → Show Extension Builder to load it manually.</p>
-                  </div>
-                </div>
+                    <h4 className="text-lg font-semibold extension-text mb-3">Items Section:</h4>
+                    <p className="text-gray-600 mb-2">
+                      Click + Add Item, fill in Description, Rate, Qty.
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                      Amounts are calculated automatically; in the Summary block you can see Subtotal, Tax, Total, Balance Due.
+                    </p>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    4
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Enable in Safari</h3>
-                    <p className="text-gray-600">Go to Safari → Preferences → Extensions and enable our extension.</p>
-                  </div>
-                </div>
-              </div>
-            </Card>
+                    <h4 className="text-lg font-semibold extension-text mb-3">Taxes and Discounts (right sidebar):</h4>
+                    <p className="text-gray-600 mb-2">
+                      Tax: None / Percentage / Fixed Amount; specify value.
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      Discount: None / Percentage / Fixed Amount.
+                    </p>
 
-            {/* Edge Instructions */}
-            <Card className="p-8 mb-8">
-              <div className="flex items-center mb-6">
-                <Laptop className="w-8 h-8 text-blue-700 mr-3" />
-                <h2 className="text-2xl font-bold extension-text">Microsoft Edge</h2>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    1
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Open Extensions Page</h3>
-                    <p className="text-gray-600">Go to <code className="bg-gray-100 px-2 py-1 rounded">edge://extensions/</code> or click the three dots menu → Extensions.</p>
-                  </div>
-                </div>
+                    <h4 className="text-lg font-semibold extension-text mb-3">Currency:</h4>
+                    <p className="text-gray-600 mb-4">
+                      Select USD / EUR / GBP — symbol updates automatically.
+                    </p>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    2
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Enable Developer Mode</h3>
-                    <p className="text-gray-600">Turn on "Developer mode" in the left sidebar.</p>
-                  </div>
-                </div>
+                    <h4 className="text-lg font-semibold extension-text mb-3">Design:</h4>
+                    <p className="text-gray-600 mb-4">
+                      In the TEMPLATE section, choose one of 12 color accents.
+                    </p>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                    3
+                    <h4 className="text-lg font-semibold extension-text mb-3">Additional:</h4>
+                    <p className="text-gray-600 mb-2">
+                      Payment Instructions — payment details and methods (IBAN/SWIFT, PayPal link, etc.). 
+                      Available in Settings for pre-filling: use Default Payment Instructions and Insert example button to quickly insert template. 
+                      These instructions will be inserted in new invoices.
+                    </p>
+                    <p className="text-gray-600 mb-6">
+                      Notes — terms and comments; also inserted if set in Settings.
+                    </p>
+
+                    <h3 className="text-xl font-bold extension-text mb-4">4) Preview, Saving and Statuses</h3>
+                    <p className="text-gray-600 mb-2">
+                      Preview: quick print view of document right on the page.
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                      Save Draft: saves draft to Invoices section (Draft status).
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      Mark as sent: marks invoice as "sent" and locks editing. Important: you send the invoice any convenient way 
+                      (e.g., printed or saved PDF and sent by email). For it to be counted in Invoices statistics, manually click Mark as sent. 
+                      In Invoices list, Sent status will be displayed (as well as Draft/Overdue/Paid).
+                    </p>
+                    <p className="text-gray-600 mb-6">
+                      Duplicate: creates editable copy of sent invoice.
+                    </p>
+
+                    <h3 className="text-xl font-bold extension-text mb-4">5) Printing and Saving PDF (High Quality PDF)</h3>
+                    <p className="text-gray-600 mb-2">
+                      Print invoice: opens browser's system print dialog.
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                      Save PDF: also opens system print; in dialog select Destination → Save as PDF.
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      Why this way: system print gives maximum quality PDF (vector graphics, correct fonts, precise margins).
+                    </p>
+
+                    <h4 className="text-lg font-semibold extension-text mb-3">Recommended Print Settings:</h4>
+                    <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-1">
+                      <li>Destination: Save as PDF</li>
+                      <li>Layout: Portrait</li>
+                      <li>Margins: Default (or None if you need edge-to-edge)</li>
+                      <li>Options: enable Background graphics (if you want to preserve color bar/logo completely)</li>
+                    </ul>
+
+                    <h3 className="text-xl font-bold extension-text mb-4">6) Managing Invoices (Invoices)</h3>
+                    <p className="text-gray-600 mb-2">
+                      Summary cards: number of invoices, total amount, paid, to be paid.
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                      Search + filters: by status and period.
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      Row actions: Edit, Duplicate, Mark as Paid, More (contextual).
+                    </p>
+                    <p className="text-gray-600 mb-6">
+                      Statuses: DRAFT, SENT, OVERDUE, PAID — statuses participate in analytics.
+                    </p>
+
+                    <h3 className="text-xl font-bold extension-text mb-4">7) Client Database (Clients)</h3>
+                    <p className="text-gray-600 mb-2">
+                      New Client — adding client with contacts.
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                      Search, edit, delete.
+                    </p>
+                    <p className="text-gray-600 mb-6">
+                      Client data is used for autocomplete in "New invoice".
+                    </p>
+
+                    <h3 className="text-xl font-bold extension-text mb-4">8) Settings</h3>
+                    <p className="text-gray-600 mb-2">
+                      Business Profile — your company data (used "by default" in new invoices).
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                      Invoice Defaults — currency, date format, Terms, auto-numbering (enable, prefix, next number).
+                    </p>
+                    <p className="text-gray-600 mb-6">
+                      Default Payment Instructions — pre-fill payment instructions for all new invoices; Insert example button for quick start.
+                    </p>
+
+                    <h3 className="text-xl font-bold extension-text mb-4">9) Privacy, Offline Mode and Backups</h3>
+                    <p className="text-gray-600 mb-2">
+                      Data (Settings, Clients, Items, Invoices, Media) is stored locally and available offline.
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      For safety, use regular backups:
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                      Export All (JSON backup): exports all data (Settings, Clients, Items, Invoices Draft/Sent/Paid, Media/logo) into one JSON v2 file.
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      Import Backup (JSON): restores full copy; can Merge (combine) or Replace (replace data entirely).
+                    </p>
+                    <p className="text-gray-600 mb-6">
+                      We recommend making backup before clearing browser data/reinstalling/moving to another computer.
+                    </p>
+
+                    <h3 className="text-xl font-bold extension-text mb-4">10) Frequently Asked Questions (FAQ)</h3>
+                    
+                    <h4 className="text-lg font-semibold extension-text mb-3">PDF "doesn't save":</h4>
+                    <p className="text-gray-600 mb-4">
+                      In print dialog select Destination → Save as PDF; make sure browser doesn't block downloads.
+                    </p>
+
+                    <h4 className="text-lg font-semibold extension-text mb-3">Due Date doesn't appear:</h4>
+                    <p className="text-gray-600 mb-4">
+                      Select Terms → Custom Date.
+                    </p>
+
+                    <h4 className="text-lg font-semibold extension-text mb-3">Tax/discount not visible:</h4>
+                    <p className="text-gray-600 mb-4">
+                      In sidebar select type (Percentage/Fixed) and specify value.
+                    </p>
+
+                    <h4 className="text-lg font-semibold extension-text mb-3">Need to fix sent invoice:</h4>
+                    <p className="text-gray-600 mb-4">
+                      Use Duplicate, edit copy; if necessary, mark as sent again.
+                    </p>
+
+                    <h4 className="text-lg font-semibold extension-text mb-3">Currency symbol "doesn't match":</h4>
+                    <p className="text-gray-600 mb-6">
+                      Check currency selection in CURRENCY section (right sidebar).
+                    </p>
+
+                    <h3 className="text-xl font-bold extension-text mb-4">11) Support</h3>
+                    <p className="text-gray-600 mb-2">
+                      Contact: specify e-mail/form on website.
+                    </p>
+                    <p className="text-gray-600 mb-6">
+                      For faster response, include browser/extension version and, if possible, invoice number (without personal data).
+                    </p>
+
+                    <div className="bg-blue-50 p-6 rounded-lg mt-8">
+                      <h4 className="text-lg font-semibold extension-text mb-3 flex items-center">
+                        <CheckCircle className="w-5 h-5 text-blue-600 mr-2" />
+                        Quick Reference
+                      </h4>
+                      <ul className="text-gray-600 space-y-1">
+                        <li>• Create professional invoices in minutes</li>
+                        <li>• Track statuses and amounts</li>
+                        <li>• Export quality PDFs through system print</li>
+                        <li>• Work offline, make JSON backups (Export All / Import Backup) regularly</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Load Extension</h3>
-                    <p className="text-gray-600">Click "Load unpacked" and select the extension folder, or install from the Microsoft Edge Add-ons store.</p>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Troubleshooting Section */}
-            <Card className="p-8">
-              <div className="flex items-center mb-6">
-                <HelpCircle className="w-8 h-8 text-green-600 mr-3" />
-                <h2 className="text-2xl font-bold extension-text">Troubleshooting</h2>
-              </div>
-              
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Extension not working?</h3>
-                  <ul className="list-disc pl-6 text-gray-600 space-y-1">
-                    <li>Make sure the extension is enabled in your browser's extension settings</li>
-                    <li>Try refreshing the webpage or restarting your browser</li>
-                    <li>Check if your browser is up to date</li>
-                    <li>Disable other extensions temporarily to check for conflicts</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Permission issues?</h3>
-                  <ul className="list-disc pl-6 text-gray-600 space-y-1">
-                    <li>Grant necessary permissions when prompted during installation</li>
-                    <li>Check browser settings to ensure the extension has required permissions</li>
-                    <li>For Chrome: Go to chrome://extensions/ → Details → Site access</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Still having problems?</h3>
-                  <p className="text-gray-600">
-                    Contact our support team at <a href="mailto:support@lumenextensions.com" className="text-blue-600 hover:underline">support@lumenextensions.com</a> 
-                    and we'll help you resolve any issues.
-                  </p>
-                </div>
-              </div>
-            </Card>
+                </Card>
+              </TabsContent>
+            </Tabs>
           </div>
         </div>
       </main>
