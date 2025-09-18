@@ -1,7 +1,8 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Globe, Monitor, Smartphone, Laptop, Code, Shield, Zap, Users } from "lucide-react"
+import { Globe, Code, Shield, Zap, Users } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -85,20 +86,14 @@ export default function HomePage() {
               <div className="flex flex-col md:flex-row items-center gap-8">
                 {/* Extension Icon */}
                 <div className="flex-shrink-0">
-                  <div className="w-24 h-24 rounded-2xl shadow-lg overflow-hidden">
-                    <img 
+                  <div className="w-24 h-24 rounded-2xl shadow-lg overflow-hidden bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center">
+                    <Image 
                       src="/icons/invoice-pro-icon.png" 
                       alt="Invoice Pro Extension Icon"
+                      width={96}
+                      height={96}
                       className="w-full h-full object-cover"
-                      onError={(e) => {
-                        // Fallback to gradient if image fails to load
-                        e.currentTarget.style.display = 'none';
-                        e.currentTarget.nextElementSibling.style.display = 'flex';
-                      }}
                     />
-                    <div className="w-full h-full bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center" style={{display: 'none'}}>
-                      <span className="text-white font-bold text-2xl">$</span>
-                    </div>
                   </div>
                 </div>
 
