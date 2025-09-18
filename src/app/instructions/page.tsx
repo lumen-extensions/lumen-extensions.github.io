@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Clock, FileText, CheckCircle } from "lucide-react"
@@ -71,15 +72,140 @@ export default function InstructionsPage() {
                     </p>
                   </div>
 
-                  {/* Placeholder for Quick Start content - will be updated with screenshots */}
-                  <div className="space-y-6">
-                    <div className="text-center py-12 bg-gray-50 rounded-lg">
-                      <Clock className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                      <h3 className="text-lg font-semibold text-gray-600 mb-2">Quick Start Guide Coming Soon</h3>
-                      <p className="text-gray-500">
-                        Visual step-by-step instructions with screenshots will be added here.
-                        <br />
-                        For now, please use the Full Guide below.
+                  {/* Quick Start Steps */}
+                  <div className="space-y-12">
+                    {/* Step 1: Open Extensions Page */}
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                          1
+                        </div>
+                        <h3 className="text-xl font-semibold extension-text">Open Chrome Extensions Page</h3>
+                      </div>
+                      <div className="space-y-4">
+                        <div className="bg-gray-100 rounded-lg p-8 text-center">
+                          <Image 
+                            src="/images/quick-start/step1-extensions.webp" 
+                            alt="Chrome extensions management page"
+                            width={1200}
+                            height={600}
+                            className="mx-auto rounded-lg shadow-sm"
+                          />
+                        </div>
+                        <p className="text-gray-600 leading-relaxed">
+                          Go to <code className="bg-gray-200 px-2 py-1 rounded">chrome://extensions/</code> or click the three dots menu → More tools → Extensions. 
+                          Make sure "Developer mode" is enabled in the top right corner.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Step 2: Find and Pin */}
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                          2
+                        </div>
+                        <h3 className="text-xl font-semibold extension-text">Find and Pin Extension</h3>
+                      </div>
+                      <div className="space-y-4">
+                        <div className="bg-gray-100 rounded-lg p-8 text-center">
+                          <Image 
+                            src="/images/quick-start/step2-find-pin.webp" 
+                            alt="Finding and pinning the extension"
+                            width={1200}
+                            height={600}
+                            className="mx-auto rounded-lg shadow-sm"
+                          />
+                        </div>
+                        <p className="text-gray-600 leading-relaxed">
+                          Look for "Invoice Pro" in your installed extensions list. Click the pin icon next to it 
+                          to keep it visible in your browser toolbar for easy access.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Step 3: Start Invoice Extension */}
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                          3
+                        </div>
+                        <h3 className="text-xl font-semibold extension-text">Start Invoice Extension</h3>
+                      </div>
+                      <div className="space-y-4">
+                        <div className="bg-gray-100 rounded-lg p-8 text-center">
+                          <Image 
+                            src="/images/quick-start/step3-start.webp" 
+                            alt="Starting the invoice extension"
+                            width={1200}
+                            height={600}
+                            className="mx-auto rounded-lg shadow-sm"
+                          />
+                        </div>
+                        <p className="text-gray-600 leading-relaxed">
+                          Click the Invoice Pro icon in your toolbar to open the extension. 
+                          You'll see the main interface with options to create new invoices, manage clients, and view existing invoices.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Step 4: Fill Invoice */}
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                          4
+                        </div>
+                        <h3 className="text-xl font-semibold extension-text">Fill Invoice Details</h3>
+                      </div>
+                      <div className="space-y-4">
+                        <div className="bg-gray-100 rounded-lg p-8 text-center">
+                          <Image 
+                            src="/images/quick-start/step4-fill.webp" 
+                            alt="Filling invoice form"
+                            width={1200}
+                            height={600}
+                            className="mx-auto rounded-lg shadow-sm"
+                          />
+                        </div>
+                        <p className="text-gray-600 leading-relaxed">
+                          Fill in your business information, client details, add line items with descriptions and prices. 
+                          The extension will automatically calculate subtotals, taxes, and the final total.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Step 5: Preview, Save, Print, Mark as Sent */}
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                          5
+                        </div>
+                        <h3 className="text-xl font-semibold extension-text">Preview, Save, Print & Mark as Sent</h3>
+                      </div>
+                      <div className="space-y-4">
+                        <div className="bg-gray-100 rounded-lg p-8 text-center">
+                          <Image 
+                            src="/images/quick-start/step5-actions.webp" 
+                            alt="Invoice actions: preview, save, print, mark as sent"
+                            width={1200}
+                            height={600}
+                            className="mx-auto rounded-lg shadow-sm"
+                          />
+                        </div>
+                        <p className="text-gray-600 leading-relaxed">
+                          Use the action buttons to: <strong>Preview</strong> your invoice, <strong>Save Draft</strong> for later editing, 
+                          <strong>Print/Save PDF</strong> for sharing, and <strong>Mark as Sent</strong> to track its status.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Success Message */}
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
+                      <CheckCircle className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                      <h3 className="text-lg font-semibold text-green-800 mb-2">You're All Set!</h3>
+                      <p className="text-green-700">
+                        You've successfully installed and set up Invoice Pro. 
+                        Check out the Full Guide below for detailed instructions on all features.
                       </p>
                     </div>
                   </div>
