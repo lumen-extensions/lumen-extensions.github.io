@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Navigation from "@/components/Navigation"
 
 export const metadata = {
   title: "Privacy Policy - Lumen Extensions",
@@ -10,35 +10,7 @@ export default function PrivacyPage() {
 
   return (
     <div className="min-h-screen extension-bg">
-      {/* Header */}
-      <header className="no-print py-6 border-b border-gray-200 bg-white">
-        <div className="container">
-          <nav className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">LE</span>
-                </div>
-                <h1 className="text-xl font-bold extension-text">Lumen Extensions</h1>
-              </Link>
-            </div>
-            <div className="flex items-center space-x-6">
-              <Link href="/" className="text-gray-600 hover:text-blue-600 font-medium">
-                Home
-              </Link>
-              <Link href="/instructions" className="text-gray-600 hover:text-blue-600 font-medium">
-                Instructions
-              </Link>
-              <Link href="/privacy" className="text-blue-600 font-medium">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-gray-600 hover:text-blue-600 font-medium">
-                Terms of Service
-              </Link>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <Navigation currentPage="privacy" />
 
       {/* Main Content */}
       <main className="py-12">
