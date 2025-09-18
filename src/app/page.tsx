@@ -48,20 +48,6 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Chrome Focus Section */}
-          <div className="max-w-2xl mx-auto mb-16">
-            <h2 className="text-2xl font-bold extension-text text-center mb-8">Chrome-First Development</h2>
-            <div className="flex justify-center">
-              <div className="flex flex-col items-center p-8 bg-white rounded-lg shadow-sm border-2 border-blue-100">
-                <Globe className="w-16 h-16 text-blue-500 mb-4" />
-                <span className="font-bold text-xl text-blue-600 mb-2">Google Chrome</span>
-                <p className="text-gray-600 text-center">
-                  We specialize in Chrome extensions, leveraging the latest Chrome APIs and Manifest V3 
-                  to deliver the best possible user experience.
-                </p>
-              </div>
-            </div>
-          </div>
 
           {/* Key Features Section */}
           <div className="max-w-6xl mx-auto">
@@ -132,18 +118,6 @@ export default function HomePage() {
             </Card>
           </div>
 
-          {/* About Section */}
-          <div className="max-w-3xl mx-auto mt-16 text-center">
-            <h2 className="text-2xl font-bold extension-text mb-6">About Lumen Extensions</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Lumen Extensions specializes in creating smart Chrome extensions that solve real business problems. 
-              We focus on productivity tools that help freelancers, entrepreneurs, and small businesses work more efficiently.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Our extensions are designed with privacy in mind — all your data stays on your device. No accounts, 
-              no cloud storage, no data collection. Just powerful tools that work exactly when and how you need them.
-            </p>
-          </div>
         </div>
       </main>
 
