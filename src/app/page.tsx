@@ -54,24 +54,24 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold extension-text text-center mb-8">Why Choose Our Extensions</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="p-6 text-center">
-                <Zap className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold extension-text mb-3">Lightning Fast</h3>
+                <Shield className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold extension-text mb-3">Reliable</h3>
                 <p className="text-gray-600">
-                  Optimized for speed and performance. Our extensions load instantly and use minimal system resources.
+                  Built with modern web technologies and thoroughly tested across browsers and platforms — so you can count on them every time.
                 </p>
               </Card>
               <Card className="p-6 text-center">
-                <Shield className="w-12 h-12 text-green-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold extension-text mb-3">Privacy First</h3>
+                <Zap className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold extension-text mb-3">Purposeful</h3>
                 <p className="text-gray-600">
-                  All data stays on your device. No cloud storage, no data collection, no tracking.
+                  Each extension is designed to solve one clear task — no bloat, no distractions, just what you need.
                 </p>
               </Card>
               <Card className="p-6 text-center">
                 <Users className="w-12 h-12 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold extension-text mb-3">User-Friendly</h3>
+                <h3 className="text-xl font-semibold extension-text mb-3">Continuously Improving</h3>
                 <p className="text-gray-600">
-                  Intuitive design that anyone can use. No learning curve, just install and start working.
+                  We ship regular updates and evolve features based on real user feedback — your experience drives our development.
                 </p>
               </Card>
             </div>
