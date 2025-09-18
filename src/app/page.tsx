@@ -85,8 +85,20 @@ export default function HomePage() {
               <div className="flex flex-col md:flex-row items-center gap-8">
                 {/* Extension Icon */}
                 <div className="flex-shrink-0">
-                  <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-blue-600 rounded-2xl shadow-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-2xl">$</span>
+                  <div className="w-24 h-24 rounded-2xl shadow-lg overflow-hidden">
+                    <img 
+                      src="/icons/invoice-pro-icon.png" 
+                      alt="Invoice Pro Extension Icon"
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        // Fallback to gradient if image fails to load
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.nextElementSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="w-full h-full bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center" style={{display: 'none'}}>
+                      <span className="text-white font-bold text-2xl">$</span>
+                    </div>
                   </div>
                 </div>
 
