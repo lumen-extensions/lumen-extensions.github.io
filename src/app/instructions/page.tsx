@@ -40,7 +40,7 @@ export default function InstructionsPage() {
                   <div className="text-center mb-8">
                     <h2 className="text-2xl font-bold extension-text mb-4">Quick Start Guide</h2>
                     <p className="text-gray-600">
-                      Get up and running with Invoice Pro in under 5 minutes
+                      Get up and running in under 5 minutes
                     </p>
                   </div>
 
