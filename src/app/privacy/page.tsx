@@ -42,7 +42,7 @@ export default function PrivacyPage() {
                   The data controller of your information is Lumen Extensions.
                 </p>
                 <p className="text-gray-700">
-                  If you have any questions about this Privacy Policy, please contact us by email at privacy@lumenextensions.com.
+                  If you have any questions about this Privacy Policy, please contact us by email at lumenextensions@gmail.com.
                 </p>
               </section>
 
@@ -181,7 +181,7 @@ export default function PrivacyPage() {
                   <li><strong>Right to Lodge a Complaint:</strong> You have the right to lodge a complaint with the appropriate supervisory authority.</li>
                 </ul>
                 <p className="text-gray-700">
-                  To exercise your rights, please submit a request to privacy@lumenextensions.com. We will respond to 
+                  To exercise your rights, please submit a request to lumenextensions@gmail.com. We will respond to 
                   your request as promptly as possible.
                 </p>
               </section>
@@ -191,7 +191,7 @@ export default function PrivacyPage() {
                 <p className="text-gray-700">
                   Our Services are not intended for use by children under the age of 13. We do not knowingly collect 
                   personal information directly from children under 13. If you have reason to believe that we may have 
-                  accidentally received information from a child under 13, please contact us immediately at privacy@lumenextensions.com.
+                  accidentally received information from a child under 13, please contact us immediately at lumenextensions@gmail.com.
                 </p>
               </section>
 
@@ -207,7 +207,7 @@ export default function PrivacyPage() {
               <section className="mb-8">
                 <h2 className="text-xl font-semibold extension-text mb-4">8. CONTACT US</h2>
                 <p className="text-gray-700">
-                  If you have any questions about this Privacy Policy, please contact us by email at privacy@lumenextensions.com.
+                  If you have any questions about this Privacy Policy, please contact us by email at lumenextensions@gmail.com.
                 </p>
               </section>
             </div>

@@ -256,7 +256,7 @@ export default function TermsPage() {
                 <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
                   <li><strong>No Patent Infringement:</strong> We have conducted reasonable searches and believe our Services do not infringe on third-party patents.</li>
                   <li><strong>Good Faith:</strong> We operate in good faith and will promptly address any legitimate patent concerns.</li>
-                  <li><strong>Notice:</strong> If you believe our Services infringe on your intellectual property rights, please contact us immediately at legal@lumenextensions.com.</li>
+                  <li><strong>Notice:</strong> If you believe our Services infringe on your intellectual property rights, please contact us immediately at lumenextensions@gmail.com.</li>
                 </ul>
               </section>
 
@@ -272,7 +272,7 @@ export default function TermsPage() {
                 </p>
                 <p className="text-gray-700">
                   <strong>Contact Information:</strong> If you have any questions about these Terms, please contact 
-                  us by email at legal@lumenextensions.com.
+                  us by email at lumenextensions@gmail.com.
                 </p>
               </section>
             </div>
