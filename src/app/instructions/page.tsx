@@ -15,10 +15,10 @@ export default function InstructionsPage() {
       <main className="py-12">
         <div className="container">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h1 className="text-3xl font-bold extension-text mb-4">Installation Instructions</h1>
-              <p className="text-lg text-gray-600">
-                Get started with Invoice Pro - Generator & Maker in just a few steps
+            <div className="text-center mb-8">
+              <h1 className="text-3xl font-bold extension-text mb-2">Invoice Generator & Maker</h1>
+              <p className="text-gray-600">
+                Get started in just a few steps
               </p>
             </div>
 
