@@ -195,16 +195,32 @@ export default function InstructionsPage() {
                   </div>
 
                   <div className="prose max-w-none">
-                    <h3 className="text-xl font-bold extension-text mb-4">1) Installation</h3>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        1
+                      </div>
+                      <h3 className="text-xl font-semibold extension-text">Installation</h3>
+                    </div>
                     <p className="text-gray-600 mb-4">
                       Install from Chrome Web Store. After installation, click the extension icon to open the interface. 
                       The page will open automatically on first install.
                     </p>
-                    <p className="text-gray-600 mb-6">
-                      Screenshot: Extension card in CWS + icon in toolbar.
-                    </p>
+                    <div className="mb-6">
+                      <Image 
+                        src="/images/full-guide/installation.webp" 
+                        alt="Extension card in Chrome Web Store and icon in toolbar"
+                        width={1200}
+                        height={600}
+                        className="mx-auto rounded-lg shadow-sm"
+                      />
+                    </div>
 
-                    <h3 className="text-xl font-bold extension-text mb-4">2) First Launch and Interface</h3>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        2
+                      </div>
+                      <h3 className="text-xl font-semibold extension-text">First Launch and Interface</h3>
+                    </div>
                     <p className="text-gray-600 mb-2">
                       Top menu: New invoice, Invoices, Clients, Settings.
                     </p>
@@ -214,11 +230,22 @@ export default function InstructionsPage() {
                     <p className="text-gray-600 mb-4">
                       Actions: Save Draft, Print invoice, Save PDF, Mark as sent (after sending, additional options become available: Duplicate, Mark as Paid).
                     </p>
-                    <p className="text-gray-600 mb-6">
-                      Screenshot: "New Invoice" (form + right sidebar).
-                    </p>
+                    <div className="mb-6">
+                      <Image 
+                        src="/images/full-guide/interface.webp" 
+                        alt="New Invoice interface with form and right sidebar"
+                        width={1200}
+                        height={600}
+                        className="mx-auto rounded-lg shadow-sm"
+                      />
+                    </div>
 
-                    <h3 className="text-xl font-bold extension-text mb-4">3) Creating an Invoice (New invoice)</h3>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        3
+                      </div>
+                      <h3 className="text-xl font-semibold extension-text">Creating an Invoice (New invoice)</h3>
+                    </div>
                     
                     <h4 className="text-lg font-semibold extension-text mb-3">Top Panel:</h4>
                     <p className="text-gray-600 mb-2">
@@ -283,7 +310,12 @@ export default function InstructionsPage() {
                       Notes — terms and comments; also inserted if set in Settings.
                     </p>
 
-                    <h3 className="text-xl font-bold extension-text mb-4">4) Preview, Saving and Statuses</h3>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        4
+                      </div>
+                      <h3 className="text-xl font-semibold extension-text">Preview, Saving and Statuses</h3>
+                    </div>
                     <p className="text-gray-600 mb-2">
                       Preview: quick print view of document right on the page.
                     </p>
@@ -295,11 +327,25 @@ export default function InstructionsPage() {
                       (e.g., printed or saved PDF and sent by email). For it to be counted in Invoices statistics, manually click Mark as sent. 
                       In Invoices list, Sent status will be displayed (as well as Draft/Overdue/Paid).
                     </p>
-                    <p className="text-gray-600 mb-6">
+                    <p className="text-gray-600 mb-4">
                       Duplicate: creates editable copy of sent invoice.
                     </p>
+                    <div className="mb-6">
+                      <Image 
+                        src="/images/full-guide/preview-actions.webp" 
+                        alt="Preview mode and action buttons (Save Draft, Print, Save PDF, Mark as Sent)"
+                        width={1200}
+                        height={600}
+                        className="mx-auto rounded-lg shadow-sm"
+                      />
+                    </div>
 
-                    <h3 className="text-xl font-bold extension-text mb-4">5) Printing and Saving PDF (High Quality PDF)</h3>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        5
+                      </div>
+                      <h3 className="text-xl font-semibold extension-text">Printing and Saving PDF (High Quality PDF)</h3>
+                    </div>
                     <p className="text-gray-600 mb-2">
                       Print invoice: opens browser's system print dialog.
                     </p>
@@ -318,7 +364,12 @@ export default function InstructionsPage() {
                       <li>Options: enable Background graphics (if you want to preserve color bar/logo completely)</li>
                     </ul>
 
-                    <h3 className="text-xl font-bold extension-text mb-4">6) Managing Invoices (Invoices)</h3>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        6
+                      </div>
+                      <h3 className="text-xl font-semibold extension-text">Managing Invoices (Invoices)</h3>
+                    </div>
                     <p className="text-gray-600 mb-2">
                       Summary cards: number of invoices, total amount, paid, to be paid.
                     </p>
@@ -328,33 +379,75 @@ export default function InstructionsPage() {
                     <p className="text-gray-600 mb-4">
                       Row actions: Edit, Duplicate, Mark as Paid, More (contextual).
                     </p>
-                    <p className="text-gray-600 mb-6">
+                    <p className="text-gray-600 mb-4">
                       Statuses: DRAFT, SENT, OVERDUE, PAID — statuses participate in analytics.
                     </p>
+                    <div className="mb-6">
+                      <Image 
+                        src="/images/full-guide/invoices-list.webp" 
+                        alt="Invoices list with summary cards, search, filters and status management"
+                        width={1200}
+                        height={600}
+                        className="mx-auto rounded-lg shadow-sm"
+                      />
+                    </div>
 
-                    <h3 className="text-xl font-bold extension-text mb-4">7) Client Database (Clients)</h3>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        7
+                      </div>
+                      <h3 className="text-xl font-semibold extension-text">Client Database (Clients)</h3>
+                    </div>
                     <p className="text-gray-600 mb-2">
                       New Client — adding client with contacts.
                     </p>
                     <p className="text-gray-600 mb-2">
                       Search, edit, delete.
                     </p>
-                    <p className="text-gray-600 mb-6">
+                    <p className="text-gray-600 mb-4">
                       Client data is used for autocomplete in "New invoice".
                     </p>
+                    <div className="mb-6">
+                      <Image 
+                        src="/images/full-guide/clients-database.webp" 
+                        alt="Client database with search, edit, delete and autocomplete functionality"
+                        width={1200}
+                        height={600}
+                        className="mx-auto rounded-lg shadow-sm"
+                      />
+                    </div>
 
-                    <h3 className="text-xl font-bold extension-text mb-4">8) Settings</h3>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        8
+                      </div>
+                      <h3 className="text-xl font-semibold extension-text">Settings</h3>
+                    </div>
                     <p className="text-gray-600 mb-2">
                       Business Profile — your company data (used "by default" in new invoices).
                     </p>
                     <p className="text-gray-600 mb-2">
                       Invoice Defaults — currency, date format, Terms, auto-numbering (enable, prefix, next number).
                     </p>
-                    <p className="text-gray-600 mb-6">
+                    <p className="text-gray-600 mb-4">
                       Default Payment Instructions — pre-fill payment instructions for all new invoices; Insert example button for quick start.
                     </p>
+                    <div className="mb-6">
+                      <Image 
+                        src="/images/full-guide/settings.webp" 
+                        alt="Settings page with Business Profile, Invoice Defaults, and Payment Instructions"
+                        width={1200}
+                        height={600}
+                        className="mx-auto rounded-lg shadow-sm"
+                      />
+                    </div>
 
-                    <h3 className="text-xl font-bold extension-text mb-4">9) Privacy, Offline Mode and Backups</h3>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        9
+                      </div>
+                      <h3 className="text-xl font-semibold extension-text">Privacy, Offline Mode and Backups</h3>
+                    </div>
                     <p className="text-gray-600 mb-2">
                       Data (Settings, Clients, Items, Invoices, Media) is stored locally and available offline.
                     </p>
@@ -367,11 +460,25 @@ export default function InstructionsPage() {
                     <p className="text-gray-600 mb-4">
                       Import Backup (JSON): restores full copy; can Merge (combine) or Replace (replace data entirely).
                     </p>
-                    <p className="text-gray-600 mb-6">
+                    <p className="text-gray-600 mb-4">
                       We recommend making backup before clearing browser data/reinstalling/moving to another computer.
                     </p>
+                    <div className="mb-6">
+                      <Image 
+                        src="/images/full-guide/backup-export.webp" 
+                        alt="Backup and Export functionality with JSON file options"
+                        width={1200}
+                        height={600}
+                        className="mx-auto rounded-lg shadow-sm"
+                      />
+                    </div>
 
-                    <h3 className="text-xl font-bold extension-text mb-4">10) Frequently Asked Questions (FAQ)</h3>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        10
+                      </div>
+                      <h3 className="text-xl font-semibold extension-text">Frequently Asked Questions (FAQ)</h3>
+                    </div>
                     
                     <h4 className="text-lg font-semibold extension-text mb-3">PDF "doesn't save":</h4>
                     <p className="text-gray-600 mb-4">
@@ -398,9 +505,14 @@ export default function InstructionsPage() {
                       Check currency selection in CURRENCY section (right sidebar).
                     </p>
 
-                    <h3 className="text-xl font-bold extension-text mb-4">11) Support</h3>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        11
+                      </div>
+                      <h3 className="text-xl font-semibold extension-text">Support</h3>
+                    </div>
                     <p className="text-gray-600 mb-2">
-                      Contact: specify e-mail/form on website.
+                      Contact: lumenextensions@gmail.com
                     </p>
                     <p className="text-gray-600 mb-6">
                       For faster response, include browser/extension version and, if possible, invoice number (without personal data).
@@ -434,7 +546,7 @@ export default function InstructionsPage() {
               <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-bold text-xs">LE</span>
               </div>
-              <span className="text-gray-600">© 2025 Lumen Extensions</span>
+              <span className="text-gray-600">© 2025  Lumen Extensions</span>
             </div>
           </div>
         </div>
