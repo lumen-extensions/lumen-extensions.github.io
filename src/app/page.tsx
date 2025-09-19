@@ -74,7 +74,7 @@ export default function HomePage() {
 
                 {/* Extension Info */}
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl font-bold extension-blue mb-3">Invoice Pro - Generator & Maker</h3>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-3">Invoice Pro - Generator & Maker</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     Quickly create, edit, and save invoices right in your browser. Perfect for freelancers, entrepreneurs, and small businesses. 
                     No sign-up, no clutter — just the features you need.
@@ -111,7 +111,7 @@ export default function HomePage() {
               <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-bold text-xs">LE</span>
               </div>
-              <span className="text-gray-600">© 2024 Lumen Extensions</span>
+              <span className="text-gray-600">© 2025 Lumen Extensions</span>
             </div>
             <div className="flex items-center space-x-6">
               <Link href="/instructions" className="text-gray-500 hover:text-blue-600 text-sm">
@@ -123,7 +123,6 @@ export default function HomePage() {
               <Link href="/terms" className="text-gray-500 hover:text-blue-600 text-sm">
                 Terms of Service
               </Link>
-              <span className="text-gray-400 text-sm">Made with ❤️ for developers</span>
             </div>
           </div>
         </div>
