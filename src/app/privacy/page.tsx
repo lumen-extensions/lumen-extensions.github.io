@@ -6,7 +6,7 @@ export const metadata = {
 }
 
 export default function PrivacyPage() {
-  const lastUpdated = "December 17, 2024"
+  const lastUpdated = "September 1, 2025"
 
   return (
     <div className="min-h-screen extension-bg">
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
             <header className="mb-8">
               <h1 className="text-3xl font-bold extension-text mb-4">Lumen Extensions Privacy Policy</h1>
               <p className="text-gray-600">
-                Last Updated: <time dateTime="2024-12-17">{lastUpdated}</time>
+                Last Updated: <time dateTime="2025-09-01">{lastUpdated}</time>
               </p>
             </header>
 
@@ -75,6 +75,19 @@ export default function PrivacyPage() {
                   <li><strong>Analytics Data:</strong> Aggregated, anonymized data about extension performance and user behavior patterns.</li>
                 </ul>
 
+                <h3 className="text-lg font-medium extension-text mb-3">Invoice Data and Financial Information</h3>
+                <p className="text-gray-700 mb-4">
+                  For the Invoice Generator & Maker extension specifically, we may collect and process:
+                </p>
+                <ul className="list-disc pl-6 mb-4 text-gray-700">
+                  <li><strong>Invoice Data:</strong> Business information, client details, invoice numbers, amounts, and payment terms that you input into the extension.</li>
+                  <li><strong>Usage Patterns:</strong> How you use invoice creation features, templates, and export functions.</li>
+                  <li><strong>Error Reports:</strong> Technical issues related to invoice generation, PDF creation, or data processing.</li>
+                </ul>
+                <p className="text-gray-700 mb-4">
+                  <strong>Important:</strong> All invoice data is stored locally on your device and is not transmitted to our servers unless you explicitly choose to sync or backup your data.
+                </p>
+
                 <h3 className="text-lg font-medium extension-text mb-3">Information We Do NOT Collect</h3>
                 <p className="text-gray-700">
                   We do not collect, store, or transmit:
@@ -85,6 +98,8 @@ export default function PrivacyPage() {
                   <li>Personal files or documents from your device</li>
                   <li>Precise location data</li>
                   <li>Personal information from websites you visit</li>
+                  <li>Bank account numbers or financial credentials</li>
+                  <li>Tax identification numbers or sensitive financial records</li>
                 </ul>
               </section>
 
@@ -124,6 +139,18 @@ export default function PrivacyPage() {
                   technical, organizational, and physical security measures to protect your data against unauthorized 
                   access, disclosure, alteration, or destruction.
                 </p>
+
+                <h3 className="text-lg font-medium extension-text mb-3">Financial Data Security</h3>
+                <p className="text-gray-700 mb-4">
+                  For Invoice Generator & Maker, we implement additional security measures to protect your financial data:
+                </p>
+                <ul className="list-disc pl-6 mb-4 text-gray-700">
+                  <li><strong>Local Storage:</strong> All invoice data is stored locally on your device using browser's secure storage mechanisms.</li>
+                  <li><strong>Data Encryption:</strong> Sensitive financial information is encrypted before storage using industry-standard encryption methods.</li>
+                  <li><strong>No Cloud Sync:</strong> Invoice data is not automatically synchronized to cloud services unless you explicitly choose to do so.</li>
+                  <li><strong>Secure Transmission:</strong> Any data transmission uses HTTPS encryption to protect information in transit.</li>
+                </ul>
+
                 <p className="text-gray-700">
                   However, no method of transmission over the Internet or method of electronic storage is 100% secure. 
                   While we strive to use commercially acceptable means to protect your personal information, we cannot 
@@ -196,7 +223,7 @@ export default function PrivacyPage() {
               <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-bold text-xs">LE</span>
               </div>
-              <span className="text-gray-600">© 2024 Lumen Extensions</span>
+              <span className="text-gray-600">© 2025 Lumen Extensions</span>
             </div>
           </div>
         </div>
