@@ -90,7 +90,7 @@ export default function InstructionsPage() {
                           />
                         </div>
                         <p className="text-gray-600 leading-relaxed">
-                          Look for "Invoice Pro" in your installed extensions list. Click the pin icon next to it 
+                          Look for "Invoice Generator & Maker" in your installed extensions list. Click the pin icon next to it 
                           to keep it visible in your browser toolbar for easy access.
                         </p>
                       </div>
@@ -115,7 +115,7 @@ export default function InstructionsPage() {
                           />
                         </div>
                         <p className="text-gray-600 leading-relaxed">
-                          Click the Invoice Pro icon in your toolbar to open the extension. 
+                          Click the Invoice Generator & Maker icon in your toolbar to open the extension. 
                           You'll see the main interface with options to create new invoices, manage clients, and view existing invoices.
                         </p>
                       </div>
@@ -176,7 +176,7 @@ export default function InstructionsPage() {
                       <CheckCircle className="w-12 h-12 text-green-600 mx-auto mb-4" />
                       <h3 className="text-lg font-semibold text-green-800 mb-2">You're All Set!</h3>
                       <p className="text-green-700">
-                        You've successfully installed and set up Invoice Pro. 
+                        You've successfully installed and set up Invoice Generator & Maker. 
                         Check out the Full Guide below for detailed instructions on all features.
                       </p>
                     </div>
@@ -434,7 +434,7 @@ export default function InstructionsPage() {
               <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-bold text-xs">LE</span>
               </div>
-              <span className="text-gray-600">© 2024 Lumen Extensions</span>
+              <span className="text-gray-600">© 2025 Lumen Extensions</span>
             </div>
           </div>
         </div>
