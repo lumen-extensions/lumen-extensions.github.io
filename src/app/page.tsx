@@ -83,7 +83,7 @@ export default function HomePage() {
                   {/* Download Buttons */}
                   <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                     <Button asChild className="bg-blue-600 hover:bg-blue-700">
-                      <a href="#" className="flex items-center gap-3">
+                      <a href="https://chromewebstore.google.com/detail/invoice-generator-maker/dilpeglkhckjpikdfjkeaabhhijpkkej" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
                         <Globe className="w-5 h-5" />
                         Chrome Web Store
                       </a>
